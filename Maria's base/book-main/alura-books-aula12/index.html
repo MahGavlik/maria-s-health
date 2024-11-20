@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Maria's Health</title> <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria's Health</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="header__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Nutrição</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Exercícios</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Saúde Mental</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Bem-estar</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Medicina</a>
+        </li>
+      </ul>
+      <img src="img/logo_saude.png" alt="Logo da Maria's Health" style="width: 150px; height: auto;"class="container__imagem">
+      <h1>MARIA'S Health</h1>
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/meus planos.png" alt="Meus planos" style="width: 90px; height: auto;" class="container__imagem"></a>
+      <a href="#"><img src="img/meu perfil.png" alt="Meu perfil" style="width: 80px; height: auto;" class="container__imagem"></a>
+      <a href="#"><img src="img/saude mental.png" alt="saude mental" style="width: 85px; height: auto;" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para uma vida mais saudável?</h2>
+    <p class="banner__texto">Descubra dicas e informações para melhorar seu bem-estar!</p>
+    <input type="search" class="banner__pesquisa" placeholder="O que você está procurando?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novidades em Saúde</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/yoga.png" alt="Beneficios da Yoga"  style="width: 70px; height: auto;"></div>
+        <div class="swiper-slide"><img src="img/nutrição.png" alt="Artigo sobre exercícios físicos"  style="width: 70px; height: auto;"></div>
+        <div class="swiper-slide"><img src="img/SaudeMental.svg" alt="Artigo sobre saúde mental"></div>
+        <div class="swiper-slide"><img src="img/BemEstar.svg" alt="Artigo sobre bem-estar"></div>
+        <div class="swiper-slide"><img src="img/Medicina.svg" alt="Artigo sobre medicina"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Artigo sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Benefícios do Yoga</h2>
+          <p>
+            Explorando os benefícios físicos e mentais do yoga para a saúde. 
+          </p>
+          <p>
+            Dentre os diversos benefícios do yoga, estão a melhora da flexibilidade, redução do estresse, fortalecimento muscular e aumento da concentração.
+            Assine já o seu plano de saúde e garanta três aulas experimentais com o Dr. Robson Robbert, ou caso já seja assinante entre em contato no e-mail para agendar suas aulas.
+        </p>
+        <p>yoga.robbert@mariashealth</p>
+        </div>
+        <img src="img/ioga.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/yogA KIDS.png" alt="aulas" style="width: 85px; height: auto;" />
+          </li>
+          <li class="botões__item">
+            <img src="img/informações.png" alt="saiba mais" style="width: 85px; height: auto;" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Artigos Populares</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/nutrição.png" style="width: 50px; height: auto;" alt="Artigo sobre nutrição"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/estrelasss.png" style="width: 85px; height: auto;" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Especialista do Mês</h3>
+          <h2 class="descrição__titulo-livro">Dr. Anny Smith</h2>
+          <p>Nutricionista renomado, Dra. Anny é especialista em dietas equilibradas. Com mais de 30 anos de esperiencia, Dra. Anny  já ajudou muitas pessoas a desenvolverem hábitos saudáveis!
+            Especialista em nutrição para familias, ela auxilia crianças a se adaptarem aos novos alimentos que agora irão fazer parte de suas dietas de forma leve e divertida para que os baixinhos não estranhem seus novos alimentos e que além de terem uma alimentação saudável possam desfrutar dos doces sabores que alimentos como frutas têm, fazendo com que eles aceitem de forma tranquila a remoção dos açúcares em suas refeições!
+          </p>
+          <p>Veja abaixo depoimentos de famílias e pacientes da Dra. Anny Smith</p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/dr medica.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/agenda dr anny.png" style="width: 85px; height: auto;" alt="marcar consulta"></li>
+          <li class="botões__item"><img src="img/depoimentos.png" style="width: 85px; height: auto;" alt="depoimentos"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Nutrição</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Exercícios</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Saúde Mental</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Bem-estar</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Medicina</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Yoga</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dietas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Saiba mais</a>
+      </li>
+    </ul>
+  </section>
